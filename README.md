@@ -90,8 +90,8 @@ RL|Rotate left|# 1001b==># 11b
 RR|Rotate right|# 1001b==># 1100b
 SL|Shift left|# 1001b==># 10b
 SR|Shift right|# 1001b==># 100b
+ASR|Arithmetic shift right (preserve MSB - Sign bit)|# 1001b==># 1100b
 SLB|Shift left byte|# 123456h==># 345600h
 SRB|Shift right byte|# 123456h==># 1234h
 RLB|Rotate left byte|# 123456h==># 345612h
 RRB|Rotate right byte|# 123456h==># 561234h
-ASR|Arithmetic shift right|
