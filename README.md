@@ -37,12 +37,12 @@ You can insert the roots and it can calculate the coefficients of the equation w
 
 ## Complex number
 ### Write complex number
-A complex number is written bitween parentesis (Real, Imm)
+A complex number is written between parentesis (Real, Imm)
 Example 5+2i ==> (5, 2)
 
 ### Rectangular and polar coordinate
-Press <kbd>↱</kbd><kbd>POLAR</kbd> to change bitween rectangular and polar coordinate, with no annunciator the calculator is in rectangular mode, with "R∠Z" is in polar mode.
-With <kbd>↱</kbd><kbd>MODES</kbd><kbd>⯆</kbd><kbd>⯆</kbd> you can choose bitween "Rectangular", "Polar" and "Spherical".
+Press <kbd>↱</kbd><kbd>POLAR</kbd> to change between rectangular and polar coordinate.<br>
+With <kbd>↱</kbd><kbd>MODES</kbd><kbd>⯆</kbd><kbd>⯆</kbd> you can choose between "Rectangular", "Polar" and "Spherical".
 
 Mode|annunciator
 ----|----
@@ -50,3 +50,48 @@ Rectangular|
 Polar|R∠Z
 Spherical|R∠∠
 
+### Function for complex number
+In <kbd>MTH</kbd><kbd>NXT</kbd>COMPL there is some function for complex number
+Function|Description|Example
+----|----|----
+ABS|Absolute value|(3,4)==>5
+ARG|Polar Angle|(1,1)==>45
+CONJ|Complex conjugate|(2,3)==>(2,-3)
+C→R|Complex to real|(2,3)==>2 3
+IM|Immaginary part|(4,-3)==>-3
+NEG|Negative|(2,-1)==>(-2,1)
+RE|Real part|(4,-3)==>4
+R→C|Real to complex|-7 -2==>(-7,-2)
+SIGN|Unit vector in the direction of the complex number|(3,4)==>(0.6,0.8)
+
+## Binary arithmetic and number bases
+### Select number base
+In <kbd>MTH</kbd>BASE choose between HEX, DEC, OCT and BIN.
+### Set word size
+Enter the number of bit in the stack, then press <kbd>MTH</kbd>BASE<kbd>NXT</kbd>STWS
+### Get word size
+Press <kbd>MTH</kbd> `BASE` <kbd>NXT</kbd> `RCWS`
+### Enter an integer value
+To enter a value press #, enter the value, if the selected base is the base you want, press enter, else press "d" for decimal, "h" for hexadecimal, "o" for octal or "b" for binary and press enter.
+### Convert between different base
+Enter the number in the given base, in <kbd>MTH</kbd> `BASE` select the desired base
+### Two's complement
+Press <kbd>+/-</kbd> to show the two's complement.
+### Convert from real number to integer end viceversa
+To convert from real to integer press <kbd>MTH</kbd> `BASE` `R→B`<br>
+To convert from integer to real press <kbd>MTH</kbd> `BASE` `B→R`
+### Boolean operator
+In <kbd>MTH</kbd> `BASE` <kbd>NXT</kbd> `LOGIC` there is the operator AND, OR, XOR and NOT.
+### Manipulating bit and byte
+In <kbd>MTH</kbd> `BASE` <kbd>NXT</kbd> `BIT` or `BYTE` there are these commands (the bit example assume word size of 4, the byte example assume word size of 24):
+Function|Description|Example
+----|----|----
+RL|Rotate left|# 1001b==># 11b
+RR|Rotate right|# 1001b==># 1100b
+SL|Shift left|# 1001b==># 10b
+SR|Shift right|# 1001b==># 100b
+SLB|Shift left byte|# 123456h==># 345600h
+SRB|Shift right byte|# 123456h==># 1234h
+RLB|Rotate left byte|# 123456h==># 345612h
+RRB|Rotate right byte|# 123456h==># 561234h
+ASR|Arithmetic shift right|
