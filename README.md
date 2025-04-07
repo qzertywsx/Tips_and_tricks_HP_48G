@@ -12,6 +12,13 @@ Tips and tricks for the HP 48G calculator
 ↲
 ∠
 
+## Numeric or symbolic mode
+Press <kbd>↰</kbd><kbd>MODES</kbd> `MISC`
+Flag|Description
+----|----
+SYM|Numeric mode
+SYM ■|Symbolic mode
+
 ## Solve quadratic equation (or n-th order polynomial equation)
 ### Find roots of a polynomial equation
 
@@ -95,3 +102,6 @@ SLB|Shift left byte|# 123456h==># 345600h
 SRB|Shift right byte|# 123456h==># 1234h
 RLB|Rotate left byte|# 123456h==># 345612h
 RRB|Rotate right byte|# 123456h==># 561234h
+
+## Unit object
+### 
